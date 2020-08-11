@@ -358,11 +358,9 @@ h2 {
 .models {
   padding: 10rem 4rem;
   background-color: #f8f8f8;
-
   width: 100vw;
   max-width: 1695px;
   margin: 0 auto;
-  height: 100vh;
   flex-direction: column;
   display: flex;
 
@@ -396,11 +394,18 @@ h2 {
 
       @media (max-width: 1280px) {
         flex: 0 0 10%;
+        width: 100%;
+  
+        border:2px solid green;
       }
     }
     &-right {
-      background-color: blue;
+      background-color: rgba(235, 206, 206, 0.084);
       flex: 0 0 80%;
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
       @media (max-width: 1280px) {
         flex: 0 0 90%;
       }
@@ -411,6 +416,40 @@ h2 {
     }
   }
 }
+.hatchbacks {
+  width: 100%;
+  margin: 1rem auto;
+  border: 0;
+  height: 0;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.18);
+}
+
+.car-models-row {
+  padding: 4rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+
+
+  border: 1px solid red;
+}
+.car-models-row-title {
+  flex: 0 0 20%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: initial;
+  color: #b5b2b2;
+}
+
+.car-models-row-content {
+  flex: 0 0 80%;
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(34, 255, 0);
+}
 
 .car-list-icons {
   width: 100%;
@@ -419,6 +458,17 @@ h2 {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  @media (max-width: 1280px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.car-list-icons svg{
+  @media (max-width: 1280px) {
+    display: none;
+  }
 }
 
 .car-list-icon-one {
