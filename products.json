@@ -3,80 +3,90 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "FINE PLEATED BLOUSE",
-        "price": 70.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img/images/product-1.jpg" } } }
       }
     },
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": " PALAZZO TROUSERS",
-        "price": 27.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-2.jpg" } } }
       }
     },
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "FLARED SURPLICE DRESS",
-        "price": 82.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-3.jpg" } } }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "OVERSIZE FLOWING SHIRT",
-        "price": 202.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-4.jpg" } } }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "CHECK SCARF",
-        "price": 188.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-5.jpg" } } }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
-        "title": "FLOWING PRINTED DRESS",
-        "price": 39.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-6.jpg" } } }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "QUILTED CROSS BODY BAG",
-        "price": 45.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-7.jpg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "POPLIN DRESS CUTWORK ",
-        "price": 33.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-8.jpg" } } }
       }
     },
     {
       "sys": { "id": "9" },
       "fields": {
-        "title": "STUDDED ANKLE BOOTS ",
-        "price": 99.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-10.jpg" } } }
       }
     },
     {
       "sys": { "id": "10" },
       "fields": {
-        "title": "FLOWING SHIRT ",
-        "price": 19.99,
+        "title": "A class",
+        "price": "OTR price starting from  £23,755.00 ",
+        "subtitle": " Hybrid Available",
         "image": { "fields": { "file": { "url": "./css/img//images/product-11.jpg" } } }
       }
     }
