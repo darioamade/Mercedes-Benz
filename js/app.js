@@ -1,5 +1,5 @@
 
-const productsDOM = document.querySelector(".car-models-row-content-aClass");
+const productsDOM = document.querySelector(".car-models-row-content");
 
 // getting the products
 class Products {
@@ -26,8 +26,9 @@ class UI {
     let result = "";
     products.forEach((product) => {
       result += `
-        <div class="car-models-row-content-aClass-title">
-        <div class="car-models-row-content-aClass-title-item-1" data-id="${product.id}">
+      <div class="car-models-row-content-aClass">
+        <div class="car-models-row-content-aClass-title" data-id="${product.id}">
+        <div class="car-models-row-content-aClass-title-item-1" >
           <span>${product.title}</span>
         </div>
         <div class="car-models-row-content-aClass-title-item-2">
@@ -42,6 +43,7 @@ class UI {
       <div class="car-models-row-content-aClass-img">
         <img  src=${product.image} alt"product"  class="img">
 
+      </div>
       </div>
         `;
     });

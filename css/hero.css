@@ -538,7 +538,7 @@ h2 {
   height: 40rem;
   width: 35rem;
   margin: 1rem;
-  background-color: #ee6f0e;
+  background-color: rgba(238, 111, 14, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,7 +606,7 @@ h2 {
   font-weight: 200;
   font-style: normal;
   font-size: 1.4rem;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   padding: 0.2rem 1.2rem;
   margin: 4px 0 8px 0;
   color: #666666;
@@ -631,27 +631,6 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.car-models-row-content-bClass {
-  height: 40rem;
-  width: 35rem;
-  margin: 1rem;
-  background-color: #ee6f0e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-@media (max-width: 863px) {
-  .car-models-row-content-bClass {
-    width: 100%;
-    margin: 2rem 0;
-  }
 }
 
 /*----------------------------------------------------------------*/
