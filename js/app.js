@@ -1,5 +1,7 @@
 
-const productsDOM = document.querySelector(".car-models-row-content");
+const productsDOM = document.querySelector(".car-models-row-content ");
+
+// const productsDOM1 = document.querySelector(".car-models-row-content-1 ");
 
 // getting the products
 class Products {
@@ -19,6 +21,22 @@ class Products {
       console.log(error);
     }
   }
+  // async getProducts() {
+  //   try {
+  //     let result = await fetch("estates.json");
+  //     let data = await result.json();
+  //     let products = data.items;
+  //     products = products.map((item) => {
+  //       const { title,subtitle, price } = item.fields;
+  //       const { id } = item.sys;
+  //       const image = item.fields.image.fields.file.url;
+  //       return { title, price, id, image , subtitle};
+  //     });
+  //     return products;
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 }
 // display Products
 class UI {
@@ -48,6 +66,7 @@ class UI {
         `;
     });
     productsDOM.innerHTML = result;
+    // productsDOM1.innerHTML = result;
   }
 }
 // local storage
@@ -60,3 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   //get all products
   products.getProducts().then((products) => ui.displayProducts(products));
 });
+
+
+
+

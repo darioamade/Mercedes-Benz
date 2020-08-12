@@ -3,33 +3,33 @@
       {
         "sys": { "id": "1" },
         "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
+          "title": "CLA Shooting Brake",
+          "price": "OTR price starting from  £32,325.00 ",
           "subtitle": " Hybrid Available",
           "image": {
-            "fields": { "file": { "url": "./css/img/images/product-1.jpg" } }
+            "fields": { "file": { "url": "./css/img/images-1/product-1.jpg" } }
           }
         }
       },
       {
         "sys": { "id": "2" },
         "fields": {
-          "title": "B class",
-          "price": "OTR price starting from  £23,755.00 ",
+          "title": "C-Class Estate",
+          "price": "OTR price starting from  £42,929.00 ",
           "subtitle": " Hybrid Available",
           "image": {
-            "fields": { "file": { "url": "./css/img//images/product-2.jpg" } }
+            "fields": { "file": { "url": "./css/img//images-1/product-2.jpg" } }
           }
         }
       },
       {
         "sys": { "id": "3" },
         "fields": {
-          "title": "A class",
+          "title": "E-Class Estate",
           "price": "OTR price starting from  £23,755.00 ",
           "subtitle": " Hybrid Available",
           "image": {
-            "fields": { "file": { "url": "./css/img//images/product-3.jpg" } }
+            "fields": { "file": { "url": "./css/img//images-1/product-3.jpg" } }
           }
         }
       },
@@ -40,76 +40,11 @@
           "price": "OTR price starting from  £23,755.00 ",
           "subtitle": " Hybrid Available",
           "image": {
-            "fields": { "file": { "url": "./css/img//images/product-4.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "5" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-5.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "6" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-6.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "7" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-7.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "8" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-8.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "9" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-10.jpg" } }
-          }
-        }
-      },
-      {
-        "sys": { "id": "10" },
-        "fields": {
-          "title": "A class",
-          "price": "OTR price starting from  £23,755.00 ",
-          "subtitle": " Hybrid Available",
-          "image": {
-            "fields": { "file": { "url": "./css/img//images/product-11.jpg" } }
+            "fields": { "file": { "url": "./css/img//images-1/product-4.jpg" } }
           }
         }
       }
+      
     ]
     
   }

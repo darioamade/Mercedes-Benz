@@ -515,7 +515,8 @@ h2 {
   border: 1px solid #00a6ff;
 }
 
-.car-models-row-content {
+.car-models-row-content,
+.car-models-row-content-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80%;
           flex: 0 0 80%;
@@ -534,7 +535,9 @@ h2 {
   border: 1px solid #ee6f0e;
 }
 
-.car-models-row-content-aClass, .car-models-row-content-bClass {
+.car-models-row-content-aClass, .car-models-row-content-bClass,
+.car-models-row-content-1-aClass,
+.car-models-row-content-1-bClass {
   height: 40rem;
   width: 35rem;
   margin: 1rem;
@@ -549,13 +552,17 @@ h2 {
 }
 
 @media (max-width: 863px) {
-  .car-models-row-content-aClass, .car-models-row-content-bClass {
+  .car-models-row-content-aClass, .car-models-row-content-bClass,
+  .car-models-row-content-1-aClass,
+  .car-models-row-content-1-bClass {
     width: 100%;
     margin: 2rem 0;
   }
 }
 
-.car-models-row-content-aClass-title, .car-models-row-content-bClass-title {
+.car-models-row-content-aClass-title, .car-models-row-content-bClass-title,
+.car-models-row-content-1-aClass-title,
+.car-models-row-content-1-bClass-title {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
@@ -575,7 +582,9 @@ h2 {
   padding: 2rem;
 }
 
-.car-models-row-content-aClass-title-item-1 span, .car-models-row-content-bClass-title-item-1 span {
+.car-models-row-content-aClass-title-item-1 span, .car-models-row-content-bClass-title-item-1 span,
+.car-models-row-content-1-aClass-title-item-1 span,
+.car-models-row-content-1-bClass-title-item-1 span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -587,7 +596,9 @@ h2 {
   color: #000000;
 }
 
-.car-models-row-content-aClass-title-item-2, .car-models-row-content-bClass-title-item-2 {
+.car-models-row-content-aClass-title-item-2, .car-models-row-content-bClass-title-item-2,
+.car-models-row-content-1-aClass-title-item-2,
+.car-models-row-content-1-bClass-title-item-2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -598,7 +609,9 @@ h2 {
   color: #999999;
 }
 
-.car-models-row-content-aClass-title-item-3 span, .car-models-row-content-bClass-title-item-3 span {
+.car-models-row-content-aClass-title-item-3 span, .car-models-row-content-bClass-title-item-3 span,
+.car-models-row-content-1-aClass-title-item-3 span,
+.car-models-row-content-1-bClass-title-item-3 span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -615,7 +628,9 @@ h2 {
   text-align: center;
 }
 
-.car-models-row-content-aClass-img, .car-models-row-content-bClass-img {
+.car-models-row-content-aClass-img, .car-models-row-content-bClass-img,
+.car-models-row-content-1-aClass-img,
+.car-models-row-content-1-bClass-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
