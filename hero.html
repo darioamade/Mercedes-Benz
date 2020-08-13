@@ -31,7 +31,7 @@
           <img
             src="/css/img/logo/logox.png"
             alt="mercedes-benz logo"
-            class="logo"
+            class="logo"  onClick="location.href='/hero.html'"
           />
           <h6>Mercedes-Benz</h6>
         </div>
@@ -55,7 +55,7 @@
             <svg class="icon-box-x">
               <use xlink:href="/css/img/sprite.svg#icon-envelope"></use>
             </svg>
-            <svg class="icon-box-x">
+            <svg class="icon-box-x"  onClick="location.href='/login.html'">
               <use xlink:href="/css/img/sprite.svg#icon-user"></use>
             </svg>
               <!-- <svg class="icon-box-x">
@@ -187,7 +187,7 @@
             </li>
             <li class="car-list-icon-one">
               <button class="btn-car">
-                <svg width="52" height="26" viewBox="0 0 82 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="hoverSvg" width="52" height="26" viewBox="0 0 82 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0)">
                   <path d="M80.869 13.345L80.216 7.74801C80.216 7.74801 77.138 4.48301 74.152 2.24401L74.805 1.96401L74.618 1.49801C55.774 0.00500727 40.662 -0.647993 34.784 0.845007C33.851 1.12501 31.332 2.52401 23.403 7.74801C23.403 7.74801 9.69 8.58801 4.745 10.547L2.693 11.387L0.546999 14.465L0.733999 16.611L-0.012001 17.357C-0.012001 17.357 0.360999 21.368 0.360999 21.275L6.145 22.301H6.332C6.145 21.648 5.959 20.902 5.959 20.249C5.959 16.517 8.944 13.532 12.676 13.532C16.408 13.532 19.393 16.517 19.393 20.249C19.393 20.995 19.3 21.742 19.02 22.395H57.735C57.548 21.742 57.362 20.996 57.362 20.249C57.3583 19.3659 57.5295 18.4908 57.8658 17.6741C58.202 16.8575 58.6966 16.1156 59.3211 15.4911C59.9456 14.8666 60.6875 14.372 61.5041 14.0358C62.3208 13.6995 63.1959 13.5283 64.079 13.532C64.9621 13.5283 65.8372 13.6995 66.6539 14.0358C67.4705 14.372 68.2124 14.8666 68.8369 15.4911C69.4614 16.1156 69.956 16.8575 70.2922 17.6741C70.6285 18.4908 70.7997 19.3659 70.796 20.249C70.796 20.715 70.796 21.089 70.703 21.555H70.983L80.125 20.436L81.618 17.917L81.991 14.465C82.081 14.372 81.615 13.905 80.869 13.345V13.345ZM5.026 14.652L1.947 15.865C1.947 15.865 2.6 13.719 3.999 12.88C4.839 12.414 7.544 11.761 7.544 11.761L5.026 14.652ZM65.57 8.86801C48.405 9.24101 36.65 9.61401 24.896 10.547C21.164 10.827 12.769 11.293 11.463 11.573C12.303 11.293 16.687 10.08 24.43 9.61401C29.468 5.78901 34.132 2.89701 35.531 2.52401C36.93 2.15101 40.569 1.77801 44.86 1.77801L44.207 8.49501C45.14 8.49501 45.979 8.40201 46.912 8.40201L47.565 1.87201C50.55 1.68501 59.972 2.24501 59.972 2.24501L62.211 8.02901H64.077L61.838 2.43201C64.263 2.61901 67.622 2.99201 70.327 3.92501C74.245 5.32401 76.95 8.31001 76.95 8.31001C76.95 8.31001 73.312 8.68101 65.57 8.86801V8.86801Z" fill="black"/>
                   <path d="M64.17 14.838C61.185 14.838 58.666 17.263 58.666 20.342C58.666 23.327 61.091 25.846 64.17 25.846C67.155 25.846 69.674 23.421 69.674 20.342C69.581 17.264 67.155 14.838 64.17 14.838ZM64.17 23.794C63.7164 23.7951 63.267 23.7065 62.8477 23.5334C62.4284 23.3603 62.0475 23.106 61.7267 22.7853C61.406 22.4645 61.1517 22.0836 60.9786 21.6643C60.8055 21.245 60.7169 20.7956 60.718 20.342C60.7169 19.8884 60.8055 19.439 60.9786 19.0197C61.1517 18.6004 61.406 18.2195 61.7267 17.8987C62.0475 17.578 62.4284 17.3237 62.8477 17.1506C63.267 16.9775 63.7164 16.8889 64.17 16.89C66.129 16.89 67.622 18.476 67.622 20.342C67.622 22.208 66.036 23.794 64.17 23.794Z" fill="black"/>
@@ -322,12 +322,7 @@
             </div>
             <hr class="hatchbacks">
             <div class="car-models-row-content-1">
-              <!-- <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>  -->
+            <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -336,11 +331,8 @@
               Estates
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-2">
+              <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -349,17 +341,8 @@
               SUV's
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
-                <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-3">
+                  <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -368,14 +351,8 @@
               Coupé
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-4">
+               <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -384,11 +361,8 @@
               Cabriolets
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-5">
+                <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -397,10 +371,8 @@
               Roadsters
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-6">
+              <!-- Populated using javascript object -->
             </div>
 
           </div>
@@ -409,29 +381,27 @@
               MPV's
             </div>
             <hr class="hatchbacks">
-            <div class="car-models-row-content">
-              <div class="car-models-row-content-aClass"></div>
-              <div class="car-models-row-content-aClass"></div>
+            <div class="car-models-row-content-8">
+              <!-- Populated using javascript object -->
             </div>
 
           </div>
-
-          <!-- <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div>
-          <div class="car-models-row"></div> -->
-
-
-
         </div>
       </div>
     </section>
+    <!-- <section class="test">
+      <div class="items">
+        <img src="/css/img/9.jpg" alt="">
+        <p>Lorem, ipsum dolor sit amet conse
+          oluta fuga velit odit nobis?</p>
+       
+     
+
+      </div>
+
+    </section> -->
     <div class="image-container">
-      <a class="dotm" href="#">
+      <a class="dotm" href="#" class="image">
         <img
           src="http://s14.directupload.net/images/111129/44ga9qid.png"
           alt="dotm"
@@ -467,7 +437,7 @@
         <a href="#"><li>services</li></a>
         <a href="#"><li>Terms and Conditions</li></a>
         <a href="footer-logo">
-          <img src="/css/img/logo/logox.png"alt="" />
+          <img src="/css/img/logo/logox.png"alt="mercedes benz logo" class="logo-footer" />
         </a>
         <a href="#"><li>privacy</li></a>
         <a href="#"><li>about</li></a>
@@ -477,8 +447,7 @@
       <ul class="nav-footer-1">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste odio,
-          accusantium rerum molestiae asperiores nostrum, nesciunt quam optio
-          nam animi saepe dignissimos repudiandae? Ipsum architecto explicabo,
+        
         </p>
         <hr />
         <p id="copy">©Mercedes-Benz - All Rights Reserved 2020</p>

@@ -1,0 +1,118 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "A-class Saloon",
+          "price": "OTR price starting from  £32,755.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-1.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "C-class Saloon",
+          "price": "OTR price starting from  £38,885.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-2.jpg" }  }
+          }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "E-class Saloon",
+          "price": "OTR price starting from  £39,055.00 ",
+          "subtitle":  " Hybrid Available",
+          
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-3.jpg" }  }
+          }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "E-class Saloon",
+          "price": "OTR price starting from  £39,055 ", 
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-4.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "S-class Saloon",
+          "price": "OTR price starting from  £76,640.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file":{ "url": "./css/img/image-3/product-5.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "Mercedes-Maybach S-class",
+          "price": "OTR price starting from  £183,285.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file":{ "url": "./css/img/image-3/product-6.jpg" }  }
+          }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "Mercedes-Maybach S-class",
+          "price": "OTR price starting from  £183,285.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-7.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "Mercedes-Maybach S-class",
+          "price": "OTR price starting from  £183,285.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-8.jpg" }  }
+          }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "Mercedes-Maybach S-class",
+          "price": "OTR price starting from  £183,285.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-3/product-9.jpg" }  }
+          }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "Mercedes-Maybach S-class",
+          "price": "OTR price starting from  £183,285.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file":{ "url": "./css/img/image-3/product-10.jpg" } } }
+          }
+        }
+  
+      
+    ]
+    
+  }
+  
