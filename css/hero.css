@@ -1326,7 +1326,7 @@ textarea:focus {
   max-width: 1695px;
   margin: 0 auto;
   background-color: inherit;
-  padding: 8rem 4rem 4rem 4rem;
+  padding: 12rem 4rem 7rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1345,8 +1345,8 @@ textarea:focus {
 .search-container-box {
   width: 35rem;
   height: 14rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(23, 23, 23, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(53, 53, 53, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(23, 23, 23, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(53, 53, 53, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   margin: 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1366,7 +1366,10 @@ textarea:focus {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
-  background-color: #009dff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
 }
 
 .search-container-box-text {
@@ -1388,6 +1391,10 @@ textarea:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+button:focus {
+  outline: none;
 }
 
 .search-icon-search {
@@ -1414,5 +1421,19 @@ textarea:focus {
 
 .btn-search:hover {
   color: #ffffff;
+}
+
+.loops {
+  width: 5rem;
+}
+
+.loops1 {
+  width: 3rem;
+}
+
+footer {
+  max-width: 1695px;
+  margin: 0 auto;
+  height: 44vh;
 }
 /*# sourceMappingURL=hero.css.map */
