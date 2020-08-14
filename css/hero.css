@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/dno4axc.css");
-@import url("/css/style.css");
 :root {
   --section-rotate: 9vw;
 }
@@ -38,6 +37,181 @@ body {
   font-style: normal;
   color: #777;
   margin: 0 auto;
+  position: relative;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow: scroll;
+}
+
+.wrapper {
+  scroll-snap-align: start;
+}
+
+/******************************* Nav-Section *********************************/
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  margin: 0 auto;
+  min-height: 18rem;
+  z-index: 2;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column;
+  z-index: 100;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.18);
+}
+
+.logo-area {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 1695px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem;
+}
+
+.logo-area h6 {
+  font-family: "Playfair Display", serif;
+  color: #d8d7d7;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.logo {
+  width: 8rem;
+  height: 7rem;
+}
+
+.logo-sub {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 1695px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul .nav-links-item-1a {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-links-item-1 {
+  text-decoration: none;
+  margin-right: 2rem;
+  color: #fff;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #999999;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.icon-box-x {
+  fill: #999999;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+
+.icon-box-x:hover {
+  fill: #fff;
+}
+
+.float-nav {
+  position: fixed;
+  height: 23.4rem;
+  width: 6rem;
+  background-color: #57cdf5;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  z-index: 5001;
+}
+
+@media (max-width: 860px) {
+  .float-nav {
+    display: none;
+  }
 }
 
 /******************************* Carousel-item  *********************************/
@@ -76,7 +250,7 @@ header {
 
 .container-title-sub {
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 0;
   right: 0;
   padding-bottom: 5rem;
@@ -140,24 +314,6 @@ header {
   /*height of the image*/
 }
 
-/*----------------------------------------*/
-/*REUSABLE COMPONENTS*/
-/*----------------------------------------*/
-/*----------------------------------------*/
-/*---------PARAGRAPHS------------------------*/
-/*----------------------------------------*/
-.ma-bt-md {
-  margin-bottom: 3rem;
-}
-
-.ma-bt-lg {
-  margin-bottom: 3.5rem;
-}
-
-.right {
-  text-align: right;
-}
-
 .line {
   margin: 6rem 0;
   width: 100%;
@@ -185,183 +341,20 @@ h2 {
 /****************************************************************/
 /**************************   Headings **************************/
 /****************************************************************/
-.heading-secondary {
-  font-size: 2.25rem;
-  font-family: "monument extended";
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  letter-spacing: 0.1rem;
-  line-height: 1.6;
-  display: inline-block;
-  margin-bottom: 1.5rem;
-}
-
-.heading-primary,
-.heading-tertiary {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 300;
-  letter-spacing: 2px;
-  margin-bottom: 2rem;
-}
-
-.heading-primary span,
-.heading-tertiary span {
-  padding: 1rem 1.5rem;
-  line-height: 1;
-}
-
 #color {
   color: #000;
-}
-
-.heading-primary {
-  font-size: 3rem;
-  font-family: "monument extended";
-  text-align: center;
-  margin: 0 auto;
 }
 
 #text-align {
   text-align: start;
 }
 
-.heading-tertiary {
-  font-size: 1.75rem;
-  text-align: center;
-  font-family: "monument extended";
-}
-
-.btn,
-.btn:link,
-.btn:visited {
-  font-size: 1.6rem;
-  padding: 1.4rem 3rem;
-  border-radius: 10rem;
-  text-transform: uppercase;
-  display: inline-block;
-  text-decoration: none;
-  position: relative;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  font-weight: 600;
-  letter-spacing: 2px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  /*Add later when we use this for the button in form*/
-  border: none;
-  cursor: pointer;
-}
-
-.btn:hover {
-  -webkit-transform: translateY(-3px);
-  transform: translateY(-3px);
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-
-.btn:active {
-  -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.btn--white {
-  background-color: #fff;
-  color: #777;
-}
-
-.btn--white::after {
-  background-color: #fff;
-}
-
-.btn--green {
-  background-color: #ffffff;
-  color: black;
-}
-
-.btn--orange {
-  background-color: #fbbf0a;
-  color: #fff;
-}
-
-.btn--green::after {
-  background-color: #ffffff;
-}
-
-.btn--small {
-  padding: 1.25rem 3rem !important;
-  font-size: 1.4rem !important;
-}
-
-.btn-small,
-.btn-small:link,
-.btn-small:visited {
-  background-color: #fefefe;
-  color: #fff;
-  font-size: 1.4rem;
-  padding: 1.25rem 3rem;
-  border-radius: 10rem;
-  text-transform: uppercase;
-  position: relative;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-  border: none;
-}
-
-.btn-small:hover {
-  background-color: #000;
-}
-
-.btn-text:link,
-.btn-text:visited {
-  color: #000;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px solid #000;
-  padding: 3px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-#btn-color1 {
-  background-color: #fbbf0a;
-}
-
-.btn-text:hover {
-  background-color: #000;
-  color: #fff;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
-.btn-text:active {
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.btn-text:focus {
-  outline: none;
-  outline: 3px solid #000;
-  outline-offset: 3px;
-}
-
-/*--------------best css effect backgrou-att-fixed----------------------*/
 /*----------------SECTION MODELS-------------------*/
 .models {
   padding: 10rem 4rem;
   background-color: #f8f8f8;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 1695px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
@@ -371,6 +364,7 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  scroll-snap-align: start;
 }
 
 .models-content-top {
@@ -444,12 +438,12 @@ h2 {
 }
 
 .models-content-down-right {
-  background-color: rgba(235, 206, 206, 0.084);
+  background-color: #f8f8f8;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80%;
           flex: 0 0 80%;
   width: 100%;
-  border: 4px solid red;
+  height: 100vh;
   overflow: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +500,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid red;
 }
 
 .car-models-row-title {
@@ -519,7 +512,6 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: initial;
   color: #b5b2b2;
-  border: 1px solid #00a6ff;
 }
 
 .car-models-row-content,
@@ -529,8 +521,7 @@ h2 {
 .car-models-row-content-4,
 .car-models-row-content-5,
 .car-models-row-content-6,
-.car-models-row-content-7,
-.car-models-row-content-8 {
+.car-models-row-content-7 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 80%;
           flex: 0 0 80%;
@@ -546,7 +537,6 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #ee6f0e;
 }
 
 .car-models-row-content-aClass,
@@ -556,12 +546,11 @@ h2 {
 .car-models-row-content-4-aClass,
 .car-models-row-content-5-aClass,
 .car-models-row-content-6-aClass,
-.car-models-row-content-7-aClass,
-.car-models-row-content-8-aClass {
+.car-models-row-content-7-aClass {
   height: 40rem;
   width: 35rem;
   margin: 1rem;
-  background-color: rgba(238, 111, 14, 0.05);
+  background-color: rgba(238, 111, 14, 0.803);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -569,6 +558,20 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 1530px) {
+  .car-models-row-content-aClass,
+  .car-models-row-content-1-aClass,
+  .car-models-row-content-2-aClass,
+  .car-models-row-content-3-aClass,
+  .car-models-row-content-4-aClass,
+  .car-models-row-content-5-aClass,
+  .car-models-row-content-6-aClass,
+  .car-models-row-content-7-aClass {
+    height: 40rem;
+    width: 35rem;
+  }
 }
 
 @media (max-width: 863px) {
@@ -579,8 +582,7 @@ h2 {
   .car-models-row-content-4-aClass,
   .car-models-row-content-5-aClass,
   .car-models-row-content-6-aClass,
-  .car-models-row-content-7-aClass,
-  .car-models-row-content-8-aClass {
+  .car-models-row-content-7-aClass {
     width: 100%;
     margin: 2rem 0;
   }
@@ -593,12 +595,11 @@ h2 {
 .car-models-row-content-4-aClass-title,
 .car-models-row-content-5-aClass-title,
 .car-models-row-content-6-aClass-title,
-.car-models-row-content-7-aClass-title,
-.car-models-row-content-8-aClass-title {
+.car-models-row-content-7-aClass-title {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%;
-  background-color: white;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -621,8 +622,7 @@ h2 {
 .car-models-row-content-4-aClass-title-item-1 span,
 .car-models-row-content-5-aClass-title-item-1 span,
 .car-models-row-content-6-aClass-title-item-1 span,
-.car-models-row-content-7-aClass-title-item-1 span,
-.car-models-row-content-8-aClass-title-item-1 span {
+.car-models-row-content-7-aClass-title-item-1 span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -641,8 +641,7 @@ h2 {
 .car-models-row-content-4-aClass-title-item-2,
 .car-models-row-content-5-aClass-title-item-2,
 .car-models-row-content-6-aClass-title-item-2,
-.car-models-row-content-7-aClass-title-item-2,
-.car-models-row-content-8-aClass-title-item-2 {
+.car-models-row-content-7-aClass-title-item-2 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -660,8 +659,7 @@ h2 {
 .car-models-row-content-4-aClass-title-item-3 span,
 .car-models-row-content-5-aClass-title-item-3 span,
 .car-models-row-content-6-aClass-title-item-3 span,
-.car-models-row-content-7-aClass-title-item-3 span,
-.car-models-row-content-8-aClass-title-item-3 span {
+.car-models-row-content-7-aClass-title-item-3 span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -685,8 +683,7 @@ h2 {
 .car-models-row-content-4-aClass-img,
 .car-models-row-content-5-aClass-img,
 .car-models-row-content-6-aClass-img,
-.car-models-row-content-7-aClass-img,
-.car-models-row-content-8-aClass-img {
+.car-models-row-content-7-aClass-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%;
@@ -740,6 +737,18 @@ h2 {
   }
 }
 
+@media (max-width: 1000px) {
+  .car-list-icons {
+    width: 90%;
+  }
+}
+
+@media (max-width: 825px) {
+  .car-list-icons {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1280px) {
   .car-list-icons svg {
     display: none;
@@ -761,6 +770,13 @@ h2 {
 @media (max-width: 1280px) {
   .car-list-icon-one {
     margin-bottom: 0rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .car-list-icon-one {
+    color: red;
   }
 }
 
@@ -807,6 +823,7 @@ svg:hover {
 @media (max-width: 1280px) {
   .btn-car-1 {
     margin-bottom: 0rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -931,6 +948,7 @@ li {
 /**************************  header **************************/
 /******************************** FOOTER ********************************/
 footer {
+  scroll-snap-align: start;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
   background-position: center;
@@ -1022,7 +1040,7 @@ footer {
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  background-image: url(/css/img/bg6.jpg);
+  background-image: url(/css/img/testdrive.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1289,5 +1307,16 @@ textarea:focus {
 .test {
   width: 100vw;
   height: 100vh;
+}
+
+.legal-notes {
+  background-color: #f8f8f8;
+  max-width: 1695px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.btn-car:active, .btn-car:focus {
+  outline: none;
 }
 /*# sourceMappingURL=hero.css.map */

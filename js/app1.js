@@ -306,3 +306,134 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+const roadsDOM6 = document.querySelector(".car-models-row-content-6");
+// getting the products
+class Road {
+  async getRoads() {
+    try {
+      let result = await fetch("road.json");
+      let data = await result.json();
+      let roads = data.items;
+      roads = roads.map((item) => {
+        const { title, subtitle, price } = item.fields;
+        const { id } = item.sys;
+        const image = item.fields.image.fields.file.url;
+        return { title, price, id, image, subtitle };
+      });
+      return roads;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+// display Products
+
+class UIX6 {
+  displayRoads(roads) {
+    let result = "";
+    roads.forEach((road) => {
+      result += `
+            <div class="car-models-row-content-aClass">
+              <div class="car-models-row-content-aClass-title" data-id="${road.id}">
+              <div class="car-models-row-content-aClass-title-item-1" >
+                <span>${road.title}</span>
+              </div>
+              <div class="car-models-row-content-aClass-title-item-2">
+              ${road.price}
+              </div>
+              <div class="car-models-row-content-aClass-title-item-3">
+                <span>${road.subtitle}</span>
+              </div>
+      
+            </div>
+            <div class="car-models-row-content-aClass-img">
+              <img  src=${road.image} alt"product"  class="img">
+      
+            </div>
+            </div>
+              `;
+    });
+    roadsDOM6.innerHTML = result;
+  }
+}
+// local storage
+class Storage6 {}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ui = new UIX6();
+  const roads = new Road();
+
+  //get all products
+  roads.getRoads().then((products) => ui.displayRoads(products));
+});
+
+
+
+
+
+
+const mvpsDOM7 = document.querySelector(".car-models-row-content-7");
+// getting the products
+class Mvp {
+  async getMvps() {
+    try {
+      let result = await fetch("mvp.json");
+      let data = await result.json();
+      let mvps = data.items;
+      mvps = mvps.map((item) => {
+        const { title, subtitle, price } = item.fields;
+        const { id } = item.sys;
+        const image = item.fields.image.fields.file.url;
+        return { title, price, id, image, subtitle };
+      });
+      return mvps;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+}
+// display Products
+
+class UIX7 {
+  displayMvps(mvps) {
+    let result = "";
+    mvps.forEach((mvp) => {
+      result += `
+            <div class="car-models-row-content-aClass">
+              <div class="car-models-row-content-aClass-title" data-id="${mvp.id}">
+              <div class="car-models-row-content-aClass-title-item-1" >
+                <span>${mvp.title}</span>
+              </div>
+              <div class="car-models-row-content-aClass-title-item-2">
+              ${mvp.price}
+              </div>
+              <div class="car-models-row-content-aClass-title-item-3">
+                <span>${mvp.subtitle}</span>
+              </div>
+      
+            </div>
+            <div class="car-models-row-content-aClass-img">
+              <img  src=${mvp.image} alt"product"  class="img">
+      
+            </div>
+            </div>
+              `;
+    });
+    mvpsDOM7.innerHTML = result;
+  }
+}
+// local storage
+class Storage7 {}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ui = new UIX7();
+  const mvps = new Mvp();
+
+  //get all products
+  mvps.getMvps().then((products) => ui.displayMvps(products));
+});
+
+
+

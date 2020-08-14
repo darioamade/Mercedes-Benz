@@ -1,0 +1,38 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "C-class Cabriolet",
+          "price": "OTR price starting from  £32,755.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-6/product-1.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "E-class Cabriolet",
+          "price": "OTR price starting from  £38,885.00 ",
+          "subtitle": " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-6/product-2.jpg" } }
+          }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "E-class Cabriolet",
+          "price": "OTR price starting from  £39,055.00 ",
+          "subtitle":  " Hybrid Available",
+          "image": {
+            "fields": { "file": { "url": "./css/img/image-6/product-3.jpg" } }
+          }
+        }
+      }
+    
+    ]
+}
