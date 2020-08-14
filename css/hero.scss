@@ -506,7 +506,6 @@ h2 {
   @media (max-width: 825px) {
     width: 100%;
   }
-  
 }
 
 .car-list-icons svg {
@@ -530,7 +529,7 @@ h2 {
     font-size: 1.4rem;
   }
   @media (max-width: 768px) {
-  color: red;
+    color: red;
   }
 }
 
@@ -940,15 +939,41 @@ textarea:focus {
   height: 100vh;
 }
 
-
 .legal-notes {
-  background-color:#f8f8f8;
+  background-color: #f8f8f8;
   max-width: 1695px;
   margin: 0 auto;
   padding: 2rem 4rem;
-
- 
 }
 
-.btn-car:active, .btn-car:focus {
-  outline: none; }
+.btn-car:active,
+.btn-car:focus {
+  outline: none;
+}
+
+/****************************** search-container**********************************/
+
+.search-container {
+  padding: 4rem;
+  max-width: 1695px;
+  margin: 0 auto;
+  background-color: inherit;
+  &-box{
+    padding: 4rem 2rem 2rem 2rem;
+
+
+  }
+}
+
+
+
+
+
+
+
+
+.search-icon-search {
+  width: 2rem;
+  height: 4rem;
+  fill: #f8f8f8;
+}
