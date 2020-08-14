@@ -1323,19 +1323,96 @@ textarea:focus {
 
 /****************************** search-container**********************************/
 .search-container {
-  padding: 4rem;
   max-width: 1695px;
   margin: 0 auto;
   background-color: inherit;
+  padding: 8rem 4rem 4rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .search-container-box {
-  padding: 4rem 2rem 2rem 2rem;
+  width: 35rem;
+  height: 14rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.15)), to(rgba(0, 0, 0, 0.15))), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(at top center, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 120%) #989898;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.search-container-box:hover {
+  background-color: #333;
+}
+
+.search-container-box-icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  background-color: #009dff;
+}
+
+.search-container-box-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .search-icon-search {
   width: 2rem;
   height: 4rem;
   fill: #f8f8f8;
+}
+
+.btn-search {
+  margin-top: 2rem;
+  padding: 0;
+  border: 0;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  background-color: transparent;
+  font-size: 2.4rem;
+  font-family: Corporate A Pro Light, serif;
+  color: #ffffff;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-search:hover {
+  color: #ffffff;
 }
 /*# sourceMappingURL=hero.css.map */
