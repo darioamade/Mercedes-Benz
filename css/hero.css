@@ -427,7 +427,7 @@ header {
 }
 
 .carousel-item {
-  height: 85vh;
+  height: 75vh;
   width: 100%;
   background-color: black;
   color: #fff;
@@ -580,6 +580,10 @@ h2 {
   background-color: #57cdf5;
 }
 
+.cta .search-container-box-text:hover {
+  background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
+}
+
 @media (max-width: 844px) {
   .cta .search-container-box-text {
     width: 100%;
@@ -589,12 +593,20 @@ h2 {
 }
 
 .cta .search-container-box-text:not(:last-child) {
-  background-color: #000000b3;
+  background-color: #000000B3;
+}
+
+.cta .search-container-box-text:not(:last-child):hover {
+  background-color: #09181d;
 }
 
 #colorWhite {
   color: #ffffff;
   fill: #fff;
+}
+
+#colorWhite:hover {
+  color: #57cdf5;
 }
 
 .cta .car-list-icon-one .btn-search {
@@ -613,7 +625,7 @@ h2 {
 
 /*----------------SECTION MODELS-------------------*/
 .models {
-  padding: 10rem 4rem;
+  padding: 2rem 4rem;
   background-color: #f8f8f8;
   width: 100vw;
   min-height: 100vh;
@@ -647,7 +659,6 @@ h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border: 1px solid #ddd;
 }
 
 .models-content-top-title {

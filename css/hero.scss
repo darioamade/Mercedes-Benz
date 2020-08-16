@@ -340,7 +340,7 @@ header {
 
 //******************** Carousel ***************/
 .carousel-item {
-  height: 85vh;
+  height: 75vh;
   width: 100%;
   background-color: rgb(0, 0, 0);
   color: #fff;
@@ -458,6 +458,9 @@ h2 {
     padding: 0 4rem;
     margin: 0.5rem;
     background-color: #57cdf5;
+    &:hover {
+      background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
+    }
     @media (max-width: 844px) {
       width: 100%;
       min-height: 8rem;
@@ -465,7 +468,10 @@ h2 {
     }
 
     &:not(:last-child) {
-      background-color: #000000b3;
+      background-color: #000000B3;
+      &:hover {
+        background-color: #09181d;
+      }
     }
   }
 }
@@ -473,6 +479,9 @@ h2 {
 #colorWhite {
   color: #ffffff;
   fill: #fff;
+  &:hover {
+    color: #57cdf5;
+  }
 }
 
 .cta .car-list-icon-one .btn-search {
@@ -492,7 +501,7 @@ h2 {
 
 /*----------------SECTION MODELS-------------------*/
 .models {
-  padding: 10rem 4rem;
+  padding: 2rem 4rem;
   background-color: #f8f8f8;
   width: 100vw;
   min-height: 100vh;
@@ -509,7 +518,6 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    border: 1px solid #ddd;
     &-title {
       flex: 1;
       padding: 1rem;
