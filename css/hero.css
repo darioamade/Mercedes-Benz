@@ -1436,7 +1436,7 @@ footer {
   max-width: 1695px;
   width: 100%;
   margin: 0 auto;
-  height: 50vh;
+  min-height: 50vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1542,32 +1542,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.4rem;
-  text-align: start;
-}
-
-.footer-container-middle-left-newsletter input {
-  background-color: #ffffff;
-  color: #262626;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
-  border: 2px solid #262626;
-  padding: 0.5rem 15rem;
-  margin-right: 1rem;
-  outline: none;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.footer-container-middle-left-newsletter button {
-  color: #8f8f8f;
-  background-color: #5f5d5d;
-  border: 2px solid #262626;
-  padding: 0.5rem 1rem;
-  max-width: 250px;
-  cursor: not-allowed;
 }
 
 .footer-container-middle-right {
@@ -1632,12 +1606,13 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1645,6 +1620,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid red;
 }
 
 .footer-container-bottom-sub {
@@ -1707,6 +1683,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 2rem;
+  border: 2px solid red;
 }
 
 #displayBlock {
@@ -1731,5 +1709,61 @@ footer {
   font-size: 2.6rem;
   font-weight: 600;
   color: #ffffff;
+}
+
+.footer-container-bottom .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*****************FORM INPUT FOOTER ***************/
+.email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.email-form input {
+  background-color: #ffffff;
+  color: #262626;
+  border: 2px solid #262626;
+  border-radius: 0px;
+  padding: 1rem 15rem;
+  margin-right: 1rem;
+  outline: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.email-form input::-webkit-input-placeholder {
+  color: #8f8f8f;
+}
+
+.email-form input:focus {
+  background-color: #ffffff;
+}
+
+.email-form button {
+  background-color: #5f5d5d;
+  border: 2px solid #262626;
+  padding: 0.5rem 2rem;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  max-width: 250px;
+}
+
+.email-form button:hover,
+.email-form button:focus {
+  color: #8f8f8f;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=hero.css.map */
