@@ -1064,24 +1064,85 @@ footer {
     flex-direction: row;
     width: 100%;
     height: 100%;
+
     @media (max-width: 1023px) {
       flex-direction: column;
     }
     &-left {
       flex: 1;
-      background: #e6d2d2;
+      width: 100%;
+      height: 100%;
+      background: inherit;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center
+      align-items: center;
+      padding: 2rem 0;
+      &-newsletter {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.4rem;
+        text-align: start;
+
+        & input {
+          background-color: #ffffff;
+          color: #262626;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 300;
+          letter-spacing: 1px;
+
+          border: 2px solid #262626;
+          padding: 0.5rem 15rem;
+          margin-right: 1rem;
+          outline: none;
+          flex-grow: 1;
+          
+        }
+        // & input:focus{
+        //   background-color: red;
+        // }
+        & button {
+          color: #8f8f8f;
+          background-color: #5f5d5d;
+          border: 2px solid #262626;
+          padding: 0.5rem 1rem;
+          max-width: 250px;
+          cursor: not-allowed;
+        }
+      }
     }
     &-right {
       flex: 1;
-      background: #702020;
+      width: 100%;
+      height: 100%;
+      background: inherit;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: center
+      padding: 2rem;
+      &-channels {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+      &-icons {
+        flex: 0 0 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .icon-box-social {
+          width: 3.5rem;
+          height: 3rem;
+          fill: #999999;
+          margin-right: 3rem;
+        }
+      }
     }
   }
   &-bottom {
@@ -1139,3 +1200,23 @@ footer {
 #displayBlock {
   display: block;
 }
+
+.regular-text,
+.regular-text-1 {
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.regular-text-1 {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+}
+
+#fontSize {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
