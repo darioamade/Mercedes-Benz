@@ -403,18 +403,18 @@
     </section>
   
     <section class="legal-notes">
-      <hr class="hatchbacks">
-      <button>
-        <div class="legal-text">
-          Legal disclaimers and annotations
-        </div>
-        <div class="icons-legal">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.5 19.992"><path d="M33.5 0v5.223L16.63 19.992 0 5.343V.12l16.63 12.908z"></path></svg>
-        </div>
-      </button>
-
+      <div class="legal-notes-top">
+        <span>Legal disclaimers and annotations</span>
+        <svg id="marginTop" class="search-icon-search-2">
+          <use xlink:href="./css/img/sprite.svg#icon-chevron-down"></use>
+        </svg>
+      </div>
+      <div class="legal-notes-down">
+        <hr class="hatchbacks-2">
+      </div>
 
     </section>
+
     <!-- <section class="test">
       <div class="items">
         <img src="/css/img/9.jpg" alt="">
@@ -493,7 +493,7 @@
       </div>
       <div class="search-container-box-text">
         <li class="car-list-icon-one">
-          <button class="btn-search">See available new cars</button>
+          <button class="btn-search">Latest Offers</button>
         </li>
         <svg class="search-icon-search">
           <use xlink:href="./css/img/sprite.svg#icon-chevron-thin-right"></use>
@@ -507,7 +507,7 @@
       </div>
       <div class="search-container-box-text">
         <li class="car-list-icon-one">
-          <button class="btn-search">See available new cars</button>
+          <button class="btn-search">Download an ebrochure</button>
         </li>
         <svg class="search-icon-search">
           <use xlink:href="./css/img/sprite.svg#icon-chevron-thin-right"></use>
@@ -520,7 +520,15 @@
   <wrapper>
     <footer>
       <div class="footer-container">
-        <div class="footer-container-top"></div>
+        <div class="footer-container-top">
+          <span>Passenger cars</span>
+          <li class="car-list-icon-one">
+            <button class="btn-search">Up</button>
+          </li>
+          <svg id="marginTop" class="search-icon-search">
+            <use xlink:href="./css/img/sprite.svg#icon-chevron-up"></use>
+          </svg>
+        </div>
         <hr class="hatchbacks">
         <div class="footer-container-middle">
           <div class="footer-container-middle-left">
@@ -563,53 +571,48 @@
         </div>
         <hr class="hatchbacks">
         <div class="footer-container-bottom">
-          <ul class="nav-links"id="flexColumn" >
-            <a  href=""><li class="nav-links-item-1" id="hoverBlueNone">Mercedes me</li></a>
-            <ul class="nav-links" id="flexColumn">
+            <ul class="nav-links-bottom" id="flexColumn1">
+              <a  href=""><li class="nav-links-item-1" id="hoverBlueNone">Mercedes me</li></a>
               <a  href=""><li class="nav-links-item-1" id="hoverBlue1">Frequently asked questions</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> &nbsp; </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1">&nbsp; </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> &nbsp; </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1">&nbsp; </li></a>
-            </ul>
-          </ul>
-
-          <ul class="nav-links"id="flexColumn" >
+            </ul> 
+           <ul class="nav-links-bottom" id="flexColumn1">
             <a  href=""><li class="nav-links-item-1" id="hoverBlueNone">About us</li></a>
-            <ul class="nav-links" id="flexColumn">
               <a  href=""><li class="nav-links-item-1" id="hoverBlue1">Sponsorship</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> Laureus</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1">MB world</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> Our Story </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> Careers </li></a>
-            </ul>
-          </ul>
-
-          <ul class="nav-links"id="flexColumn" >
+            </ul> 
+           <ul class="nav-links-bottom" id="flexColumn1">
             <a  href=""><li class="nav-links-item-1" id="hoverBlueNone">Further information</li></a>
-            <ul class="nav-links" id="flexColumn">
               <a  href=""><li class="nav-links-item-1" id="hoverBlue1">CONTACT US</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> WLTP </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1">End of life recycling</li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> Car guides </li></a>
               <a href=""><li class="nav-links-item-1" id="hoverBlue1"> &nbsp; </li></a>
-            </ul>
-          </ul>
-
+            </ul> 
         </div>
-        <div class="footer-container-bottom-sub">
-          <div class="footer-container-bottom-sub-wrapper">
-            <ul class="nav-links"  >
-              <a  href=""><li class="nav-links-item-1" id="hoverBlue">Further information</li></a>
-              <a href=""><li class="nav-links-item-1" id="hoverBlue"> Modern Slavery Act Statement </li></a>
-              <a href=""><li class="nav-links-item-1" id="hoverBlue">Privacy Policy</li></a>
-              <a href=""><li class="nav-links-item-1" id="hoverBlue"> Legal Notice </li></a>
-              <a href=""><li class="nav-links-item-1" id="hoverBlue"> Cookies </li></a>
-            </ul>
-          </div>
-        </div>
+        <!--End of the footer -->
       </div>
     </footer>
+    <div class="section-last">
+      <div class="footer-container-bottom-sub">
+        <div class="footer-container-bottom-sub-wrapper">
+          <ul class="nav-links"  >
+            <a  href=""><li class="nav-links-item-1" id="hoverBlue">© 2004 - 2020 Mercedes-Benz Cars UK Ltd</li></a>
+            <a href=""><li class="nav-links-item-1" id="hoverBlue"> Modern Slavery Act Statement </li></a>
+            <a href=""><li class="nav-links-item-1" id="hoverBlue">Privacy Policy</li></a>
+            <a href=""><li class="nav-links-item-1" id="hoverBlue"> Legal Notice </li></a>
+            <a href=""><li class="nav-links-item-1" id="hoverBlue"> Cookies </li></a>
+          </ul>
+        </div>
+      </div> 
+
+    </div>
 <!-- 
     <footer>
       <ul class="nav-footer">
