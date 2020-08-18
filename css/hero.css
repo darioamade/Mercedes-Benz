@@ -2369,4 +2369,47 @@ footer {
     width: 100%;
   }
 }
+
+/**************************HIGHLIGH SECTION ****************/
+.highlight {
+  background-color: white;
+  max-width: 1695px;
+  margin: 0 auto;
+  padding-top: 18rem;
+  min-height: 75vh;
+  border: 2px solid red;
+}
+
+.highlight-content {
+  width: 100%;
+  padding: 1rem 0;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.highlight-content-nav {
+  background-color: black;
+  width: 100%;
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
 /*# sourceMappingURL=hero.css.map */

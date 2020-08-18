@@ -367,8 +367,9 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
-  justify-content:center;
-  align-items: center;}
+  justify-content: center;
+  align-items: center;
+}
 
 .container-title-sub {
   position: absolute;
@@ -1651,5 +1652,33 @@ footer {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+  }
+}
+
+/**************************HIGHLIGH SECTION ****************/
+
+.highlight {
+  background-color: white;
+  max-width: 1695px;
+  margin: 0 auto;
+  padding-top: 18rem;
+  min-height: 75vh;
+  border: 2px solid red;
+  &-content {
+    width: 100%;
+    padding: 1rem 0;
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    &-nav {
+      background-color: black;
+      width: 100%;
+      padding: 1rem 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
 }
