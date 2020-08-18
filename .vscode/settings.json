@@ -11,5 +11,6 @@
         "ebrochure",
         "fieldsinput",
         "suvs"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

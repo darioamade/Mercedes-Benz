@@ -335,9 +335,9 @@ header {
 
 .carousel-indicators li {
   width: 60px;
-  // background-color: #57cdf5;
-}
 
+  //  background-color: #57cdf5;
+}
 //******************** Carousel ***************/
 .carousel-item {
   height: 75vh;
@@ -357,6 +357,18 @@ header {
   padding-bottom: 5rem;
   cursor: pointer;
 }
+
+#position {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content:center;
+  align-items: center;}
 
 .container-title-sub {
   position: absolute;
@@ -468,7 +480,7 @@ h2 {
     }
 
     &:not(:last-child) {
-      background-color: #000000B3;
+      background-color: #000000b3;
       &:hover {
         background-color: #09181d;
       }
