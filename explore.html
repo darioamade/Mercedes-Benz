@@ -163,7 +163,7 @@
       </div>
      
     </header>
-    <section class="legal-notes">
+    <!-- <section class="legal-notes">
       <div class="legal-notes-top">
         <span>Legal disclaimers and annotations</span>
         <svg id="marginTop" class="search-icon-search-2">
@@ -173,7 +173,7 @@
       <div class="legal-notes-down">
         <hr class="hatchbacks">
       </div>
-    </section>
+    </section> -->
     <section class="overview">
       <div class="overview-box">
         <div class="overview-box-title">
@@ -184,7 +184,7 @@
             Unmatched open-top performance.</h3>
         </div>
         <div class="overview-box-text">
-          <p class="regular-text">    The Mercedes-AMG GT Roadster sets new
+          <p class="regular-text-2">    The Mercedes-AMG GT Roadster sets new
             standards for open-top driving, delivering 
             unadulterated driving pleasure. Whichever AMG GT Roadster 
             model you choose, you get to experience the joy of the Mercedes-Benz
@@ -206,12 +206,22 @@
   <section class="gallery">
     <figure class="gallery__item gallery__item--1"> 
       <img src="/css/img/15.jpg" alt="Gallery image 1" class="gallery__img">
+      <a href="#popup"><svg class="plus-icon" >
+        <use xlink:href="./css/img/sprite.svg#icon-search-plus"></use>
+      </svg></a>
     </figure>
+
     <figure class="gallery__item gallery__item--2"> 
       <img src="/css/img/16.jpg" alt="Gallery image 1" class="gallery__img">
+      <svg class="plus-icon">
+        <use xlink:href="./css/img/sprite.svg#icon-search-plus"></use>
+      </svg>
     </figure>
     <figure class="gallery__item gallery__item--3"> 
       <img src="/css/img/17.jpg" alt="Gallery image 1" class="gallery__img">
+      <svg class="plus-icon">
+        <use xlink:href="./css/img/sprite.svg#icon-search-plus"></use>
+      </svg>
     </figure>
   
 
@@ -370,8 +380,15 @@
           </ul>
         </div>
       </div> 
-
     </div>
+    <!-- popup -->
+    <div class="popup" id="popup">
+      <a href="#" class="popup-close">&times;</a>
+      <div class="popup-content">
+        <img src="/css/img/15.jpg" alt="Gallery image 1" class="gallery__img">
+      </div>
+    </div>
+    <!-- popup -->  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
