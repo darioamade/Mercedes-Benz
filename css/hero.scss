@@ -512,6 +512,10 @@ h2 {
 .cta .car-list-icon-one .btn-search {
   margin-bottom: 2rem;
 }
+
+#marginBtn {
+  margin-bottom: 2rem;
+}
 /**************************   Headings **************************/
 
 /****************************************************************/
@@ -782,6 +786,16 @@ h2 {
   @media (max-width: 404px) {
     font-size: 1rem;
   }
+}
+.car-list-icon-two .btn-search {
+  font-size: 1.2rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: initial;
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
 }
 
 .vl {
@@ -1330,7 +1344,8 @@ button:focus {
 .search-icon-search,
 .search-icon-search-2,
 .search-icon-search-5,
-.search-icon-search-nav-open {
+.search-icon-search-nav-open,
+.search-icon-search-nav-open-1 {
   width: 2rem;
   height: 4rem;
   fill: #f8f8f8;
@@ -1357,6 +1372,11 @@ button:focus {
   fill: #555555;
   cursor: pointer;
 }
+
+.search-icon-search-nav-open-1 {
+  height: 1.3rem;
+}
+
 .btn-search {
   margin-top: 2rem;
   padding: 0;
@@ -1702,6 +1722,9 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @media (max-width: 144rem) {
+      padding: 0rem 4rem;
+    }
     &-nav {
       // position: fixed;
       // z-index: 9999;
@@ -1813,9 +1836,9 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   padding: 6rem 0;
-  border: 1px solid white;
+
   &-box {
-    min-height: 30rem;
+    min-height: 25rem;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -1823,6 +1846,9 @@ footer {
     justify-content: flex-start;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 144rem) {
+      padding: 0rem 4rem;
+    }
     &-title {
       width: 100%;
       height: 100%;
@@ -1834,31 +1860,63 @@ footer {
       color: #ffffff;
       list-style: none;
       text-decoration: none;
-      margin-bottom: 2rem;
+      @media (max-width: 1440px) {
+        font-size: 1.125rem;
+      }
     }
     &-sub {
       height: 100%;
-      font-size: 3.6rem;
-      color: #ffffff;
-      font-weight: 400;
-      letter-spacing: 1px;
-      font-family: inherit;
-      text-transform: initial;
+      widows: 100%;
+      h3 {
+        font-size: 3.6rem;
+        color: #ffffff;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: inherit;
+        text-transform: initial;
+        @media (max-width: 1440px) {
+          font-size: 2.8rem;
+        }
+      }
     }
+
     &-text {
       p {
         width: 60%;
+        color: #ffffff;
       }
     }
     &-icon {
       width: 100%;
       height: 100%;
-      border: 1px solid white;
       display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
+      &-box {
+        width: 17%;
+        height: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #57cdf5;
+        &:hover {
+          background-color: #00adefb3;
+        }
+      }
     }
   }
 }
-/****************************************************************/
+/***************************** container ***********************************/
+.container-img {
+  max-width: 1965px;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  // grid-template-column:
+  @media (max-width: 144rem) {
+    padding: 0rem 4rem;
+  }
+}
