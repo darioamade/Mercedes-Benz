@@ -213,15 +213,15 @@
 
     <figure class="gallery__item gallery__item--2"> 
       <img src="/css/img/16.jpg" alt="Gallery image 1" class="gallery__img">
-      <svg class="plus-icon">
+      <a href="#popup"><svg class="plus-icon">
         <use xlink:href="./css/img/sprite.svg#icon-search-plus"></use>
-      </svg>
+      </svg></a>
     </figure>
     <figure class="gallery__item gallery__item--3"> 
       <img src="/css/img/17.jpg" alt="Gallery image 1" class="gallery__img">
-      <svg class="plus-icon">
+      <a href="#popup"><svg class="plus-icon">
         <use xlink:href="./css/img/sprite.svg#icon-search-plus"></use>
-      </svg>
+      </svg></a>
     </figure>
   
 
@@ -385,7 +385,24 @@
     <div class="popup" id="popup">
       <a href="#" class="popup-close">&times;</a>
       <div class="popup-content">
-        <img src="/css/img/15.jpg" alt="Gallery image 1" class="gallery__img">
+        <!-- <img src="/css/img/15.jpg" alt="Gallery image 1" class="gallery__img"> -->
+        <div class="popup-content-carousel-container">
+          <svg class="icon-box-1">
+              <use xlink:href="/css/img/sprite.svg#icon-chevron-thin-right"  id="nextBtn"></use> 
+          </svg>
+          <svg class="icon-box-2">
+              <use xlink:href="/css/img/sprite.svg#icon-chevron-thin-left" id="prevBtn"></use> 
+          </svg>
+         <!-- <i class="fas fa-arrow-left" id="prevBtn"></i>
+          <i class="fas fa-arrow-right" id="nextBtn"></i>  -->
+          <div class="carousel-slide">
+              <img src="/css/img/15.jpg" id="lastClone" alt="" class=img>
+              <img src="/css/img/17.jpg" alt="" class=img>
+              <img src="/css/img/16.jpg" alt="" class=img>  
+              <img src="/css/img/15.jpg" alt="" class=img>
+              <img src="/css/img/17.jpg" id="firstClone" alt="" class=img>
+          </div>
+      </div>
       </div>
     </div>
     <!-- popup -->  
