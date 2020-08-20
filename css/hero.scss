@@ -2031,63 +2031,71 @@ footer {
   outline: none;
 }
 
-.popup-content {
-  background-color: #fff;
-  width: 100%;
-  height: 60%;
-  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 2px;
-  &-carousel-container {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    // border: 5px solid #fff;
-    overflow: hidden;
-    position: relative;
-  }
-}
-
-.carousel-slide {
-  display: flex;
+.popup-content{
   max-width: 1695px;
-  height: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  border: none;
+  background-color: #ffffff;
 }
 
-.img {
-  width: 100%;
-}
+// .popup-content {
+//   background-color: #fff;
+//   width: 100%;
+//   height: 60%;
+//   // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   border-radius: 2px;
+//   &-carousel-container {
+//     width: 100%;
+//     height: 100%;
+//     margin: auto;
+//     // border: 5px solid #fff;
+//     overflow: hidden;
+//     position: relative;
+//   }
+// }
 
-#prevBtn,
-.icon-box-2 {
-  position: absolute;
-  top: 50%;
-  z-index: 9999;
-  left: 5%;
-  font-size: 300px;
-  width: 4rem;
-  height: 5rem;
-  fill: #fff;
+// .carousel-slide {
+//   display: flex;
+//   max-width: 1695px;
+//   height: 100%;
+// }
 
-  opacity: 0.9;
-  cursor: pointer;
-}
-#nextBtn,
-.icon-box-1 {
-  position: absolute;
-  top: 50%;
-  z-index: 9999;
-  right: 5%;
-  font-size: 300px;
-  width: 4rem;
-  height: 5rem;
-  fill: #ffffffd7;
-  opacity: 0.9;
-  cursor: pointer;
-}
+// .img {
+//   width: 100%;
+// }
+
+// #prevBtn,
+// .icon-box-2 {
+//   position: absolute;
+//   top: 50%;
+//   z-index: 9999;
+//   left: 5%;
+//   font-size: 300px;
+//   width: 4rem;
+//   height: 5rem;
+//   fill: #fff;
+
+//   opacity: 0.9;
+//   cursor: pointer;
+// }
+// #nextBtn,
+// .icon-box-1 {
+//   position: absolute;
+//   top: 50%;
+//   z-index: 9999;
+//   right: 5%;
+//   font-size: 300px;
+//   width: 4rem;
+//   height: 5rem;
+//   fill: #ffffffd7;
+//   opacity: 0.9;
+//   cursor: pointer;
+// }
 /******************************** POPUP 👆*******************************/
 
 .used {
