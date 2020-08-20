@@ -1984,10 +1984,13 @@ footer {
 
 .popup {
   height: 100%;
+  max-width: 1695px;
   width: 100%;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   background-color: rgba(14, 13, 13, 0.8);
   z-index: 9999;
   opacity: 0;
@@ -2050,7 +2053,7 @@ footer {
 
 .carousel-slide {
   display: flex;
-  width: 100%;
+  max-width: 1695px;
   height: 100%;
 }
 
@@ -2086,3 +2089,12 @@ footer {
   cursor: pointer;
 }
 /******************************** POPUP 👆*******************************/
+
+.used {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -2852,10 +2852,13 @@ footer {
 /******************************** POPUP 👇*******************************/
 .popup {
   height: 100%;
+  max-width: 1695px;
   width: 100%;
+  margin: 0 auto;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   background-color: rgba(14, 13, 13, 0.8);
   z-index: 9999;
   opacity: 0;
@@ -2924,7 +2927,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 1695px;
   height: 100%;
 }
 
@@ -2961,4 +2964,21 @@ footer {
 }
 
 /******************************** POPUP 👆*******************************/
+.used {
+  max-width: 144rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=hero.css.map */
