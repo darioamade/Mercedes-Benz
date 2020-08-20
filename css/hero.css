@@ -2430,7 +2430,7 @@ footer {
   background: #123 url(/css/img/testdrive1.jpg);
   background: #123 url(/css/img/15.jpg);
   background-size: cover;
-  background-position: cover;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-filter: brightness(90%);
           filter: brightness(90%);
@@ -2880,7 +2880,7 @@ footer {
 .popup-close:visited {
   color: #fff;
   position: absolute;
-  top: 26rem;
+  top: 14rem;
   right: 2rem;
   width: 4rem;
   height: 4rem;
@@ -2904,11 +2904,44 @@ footer {
 }
 
 .popup-content {
-  max-width: 1695px;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup-content-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 1695px;
+  max-height: 60vh;
   margin: 0 auto;
   border: none;
-  background-color: #ffffff;
+  background-color: #262626;
+  border: 5px solid red;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
 }
 
 /******************************** POPUP 👆*******************************/
