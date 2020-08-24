@@ -1,0 +1,238 @@
+
+.container-login {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-image: url(/css/img/testdrive.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-area {
+    background-color: rgba(255, 255, 255, 0);
+    width: 665px;
+    height: 682px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &-me {
+      background-color: #000000;
+      flex: 0 0 15%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    &-id {
+      background-color: rgb(255, 255, 255);
+      flex: 0 0 15%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h6 {
+        font-family: "Playfair Display", serif;
+        color: #000000;
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: 1;
+      }
+    }
+    &-form {
+      background-color: #fff;
+      flex: 0 0 60%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-bottom {
+      flex: 0 0 10%;
+      width: 100%;
+      background-color: #000000;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  
+  .fields {
+    background-color: #ffffff00;
+    width: 60rem;
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .fields label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    color: #333333;
+    text-transform: initial;
+    margin: 0;
+  
+    @media screen and (max-width: 980px) {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .fields input[type="checkbox"],
+  .fields input[type="radio"] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    display: block;
+    float: left;
+    margin-right: -2rem;
+    opacity: 0;
+    width: 1rem;
+    z-index: -1;
+  }
+  
+  textarea {
+    padding: 1rem 6rem;
+    width: 100%;
+  }
+  
+  .fields input[type="text"]:invalid,
+  .fields input[type="password"]:invalid,
+  .fields input[type="email"]:invalid,
+  select:invalid,
+  textarea:invalid {
+    box-shadow: none;
+  }
+  
+  .fields input[type="text"],
+  .fields input[type="password"],
+  .fields input[type="email"],
+  select {
+    height: 4rem;
+    width: 45rem;
+    min-width: 20rem;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    color: #333333;
+  }
+  
+  .fields input[type="text"]:focus,
+  .fieldsinput[type="password"]:focus,
+  .fields input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #0b5e3e8a;
+  }
+  
+  .fields input[type="checkbox"]:focus + label:before,
+  .fields input[type="radio"]:focus + label:before {
+    border-color: #18bfef;
+  }
+  
+  .form:focus {
+    outline: none;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    border-bottom: 3px solid #ddd;
+  }
+  
+  .btn-blue,
+  .btn-dark {
+    margin: 2px 2px 2px 0px;
+    padding: 8px 14px 8px 26px;
+    border: 0;
+    appearance: button;
+    background-color: #00adef;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+  }
+  .btn-blue:focus,
+  .btn-dark:focus {
+    outline: none;
+  }
+  
+  .btn-dark {
+    background-color: #333333;
+  }
+  
+  .icon-box-login {
+    fill: #fff;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .nav-links-login,
+  .nav-links-login-1 {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #00adef;
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+    text-transform: initial;
+  }
+  
+  .nav-links-login-1 {
+    color: #333333;
+  }
+  
+  .test {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .legal-notes {
+    background-color: #fff;
+    max-width: 1695px;
+    margin: 0 auto;
+    padding: 6rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    &-top {
+      flex: 1;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      & span {
+        color: #000;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+      }
+    }
+    &-down {
+      flex: 1;
+      position: relative;
+    }
+  }
+  
+  .btn-car:active,
+  .btn-car:focus {
+    outline: none;
+  }
+  

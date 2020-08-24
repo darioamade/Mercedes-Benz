@@ -1,0 +1,49 @@
+@import url("https://use.typekit.net/dno4axc.css");
+//  @import url("/css/style.css");
+:root {
+  --section-rotate: 9vw;
+}
+
+::-moz-selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
+  line-height: 1.6;
+  font-family: Corporate A Pro Light, serif;
+  font-weight: 200;
+  font-style: normal;
+  color: #777;
+  margin: 0 auto;
+  position: relative;
+
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+}
+
+.wrapper {
+  scroll-snap-align: start;
+}

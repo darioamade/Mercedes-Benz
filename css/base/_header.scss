@@ -1,0 +1,196 @@
+
+header {
+    position: relative;
+    width: 100vw;
+  }
+  
+  .carousel {
+    max-width: 1695px;
+    margin: 0 auto;
+  }
+  
+  .carousel-indicators li {
+    width: 60px;
+  
+    //  background-color: #57cdf5;
+  }
+  //******************** Carousel ***************/
+  .carousel-item {
+    height: 55vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5rem;
+    cursor: pointer;
+  }
+  
+  #position {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-title-sub {
+    position: absolute;
+    top: 12%;
+    left: 0;
+    right: 0;
+    padding-bottom: 5rem;
+    cursor: pointer;
+  
+    h1 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: Corporate A Pro Light, serif;
+      font-weight: 200;
+      font-style: normal;
+      font-size: 4.5rem;
+      color: #fff;
+      line-height: 1;
+      letter-spacing: 2px;
+      text-transform: initial;
+      @media (max-width: 1280px) {
+        font-size: 3rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  
+  .overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .dotm {
+    display: block;
+    background: url(https://media.giphy.com/media/5l3lJzA8zVMqc/giphy.gif)
+      no-repeat;
+    /* change with the image URL */
+    background-size: cover;
+  }
+  
+  .dotm-overlay {
+    background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
+    width: 100%;
+    height: 70vh;
+    /*height of the image*/
+  }
+  
+  .line {
+    margin: 6rem 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+  
+  h2 {
+    font-family: Corporate A Pro Light, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 4.8rem;
+    color: #000000;
+    line-height: 1;
+    letter-spacing: 0px;
+    text-transform: initial;
+    @media (max-width: 1280px) {
+      font-size: 3rem;
+    }
+  }
+
+
+/**************************** CTA ************************************/
+
+.cta {
+    background-color: #f8f8f8;
+    max-width: 1695px;
+    margin: 0 auto;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 844px) {
+      flex-direction: column;
+    }
+  
+    & .search-container-box-text {
+      width: 2rem;
+      height: 6rem;
+      border: 2px solid #ffffff;
+      padding: 0 4rem;
+      margin: 0.5rem;
+      background-color: #57cdf5;
+      &:hover {
+        background: linear-gradient(180deg, #000 0, #2e2e2e 300px, #000 1000px);
+      }
+      @media (max-width: 844px) {
+        width: 100%;
+        min-height: 8rem;
+        padding: 0rem 2rem;
+      }
+  
+      &:not(:last-child) {
+        background-color: #000000b3;
+        &:hover {
+          background-color: #09181d;
+        }
+      }
+    }
+  }
+  
+  #colorWhite {
+    color: #ffffff;
+    fill: #fff;
+    &:hover {
+      color: #57cdf5;
+    }
+  }
+  
+  .cta .car-list-icon-one .btn-search {
+    margin-bottom: 2rem;
+  }
+  
+  #marginBtn {
+    margin-bottom: 2rem;
+  }
+  /**************************   Headings **************************/
+  
+  /****************************************************************/
+  
+  #color {
+    color: #000;
+  }
+  
+  #text-align {
+    text-align: start;
+  }
+  
