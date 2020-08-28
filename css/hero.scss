@@ -1,7 +1,10 @@
 @import './base/base';
-@import './base/exlpore';
+@import './base/explore';
 @import './base/login';
 @import './base/popup';
+@import './base/nav';
+@import './base/header';
+
 
 
 /*----------------SECTION MODELS-------------------*/
@@ -433,4 +436,3 @@ li {
   cursor: inherit;
 }
 
-/****************************************************************/
